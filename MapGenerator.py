@@ -61,7 +61,7 @@ class MapGenerator:
 #     prefix : str, default 'glyphicon'
 #         The prefix states the source of the icon. 'fa' for font-awesome or
 #         'glyphicon' for bootstrapp3.
-        return folium.Icon(color='blue', icon='comment', icon_color='white', prefix='fa')
+        return folium.Icon(color='blue', icon='leaf', icon_color='white', prefix='glyphicon')
         #try:
         #    float(isFormateur)
         #    return None
@@ -77,7 +77,7 @@ class MapGenerator:
         attr = 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         tiles = 'https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}'
 
-        myMap = folium.Map(location=SF_COORDINATES, tiles=None, zoom_start=2)
+        myMap = folium.Map(location=SF_COORDINATES, tiles=None, zoom_start=2, world_copy_jump=True)
         myMap.add_tile_layer(tiles='OpenStreetMap',  name='OpenStreetMap')
         myMap.add_tile_layer(tiles=tiles, attr=attr, name='Heidelberg Uni')
         # myMap = folium.Map(location=SF_COORDINATES, zoom_start=2)
