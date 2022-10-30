@@ -1,0 +1,106 @@
+<div style="border:none; overflow:hidden; width:auto; height:690px;" allowTransparency="true">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+            <style> #map_1e0ac413355940dfa215834f9599c894 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css" />
+            <div class="folium-map" id="map_1e0ac413355940dfa215834f9599c894" ></div>
+<script>    
+                var bounds = null;
+            var map_1e0ac413355940dfa215834f9599c894 = L.map(
+                                  'map_1e0ac413355940dfa215834f9599c894',
+                                  {center: [10,0],
+                                  zoom: 2,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            var tile_layer_69cc44bf87274c9aa382f03a3b1fbfc4 = L.tileLayer(
+                'https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}',
+                {
+  "attribution": "Imagery from <a href=\"http://giscience.uni-hd.de/\">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>",
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_1e0ac413355940dfa215834f9599c894);
+            var marker_cluster_f3e3dd3df57f498f9c76b911cb937831 = L.markerClusterGroup({
+            });
+            map_1e0ac413355940dfa215834f9599c894.addLayer(marker_cluster_f3e3dd3df57f498f9c76b911cb937831);
+            var marker_cfcbc5a4db1b4ad7bea38d91672dffcd = L.marker(
+                [48.183333000000005,-0.783333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_f3e3dd3df57f498f9c76b911cb937831);
+            var popup_79e4c16b069645f9b2d9e2e4883bc80f = L.popup({maxWidth: '300'});
+                var html_6e2d8983282948678a5dc025348677c5 = $('<div id="html_6e2d8983282948678a5dc025348677c5" style="width: 100.0%; height: 100.0%;"><strong>Anne-Maëlle Hécétou</strong><br/>Andouillé<br/><a href="https://www.facebook.com/messages/t/annemaelle.hecetou">Contacter</a></div>')[0];
+                popup_79e4c16b069645f9b2d9e2e4883bc80f.setContent(html_6e2d8983282948678a5dc025348677c5);
+            marker_cfcbc5a4db1b4ad7bea38d91672dffcd.bindPopup(popup_79e4c16b069645f9b2d9e2e4883bc80f);
+            var marker_ba0d834b1dc844a3b5e3e2a17b441bb6 = L.marker(
+                [47.0,-1.333333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_f3e3dd3df57f498f9c76b911cb937831);
+            var popup_04b652a456d0416e8c1548214559b953 = L.popup({maxWidth: '300'});
+                var html_ac52983c250048fe842668594fe1a835 = $('<div id="html_ac52983c250048fe842668594fe1a835" style="width: 100.0%; height: 100.0%;"><strong>Vincent GIRARD</strong><br/>Saint-Hilaire-de-Loulay<br/><a href="https://www.facebook.com/messages/t/vincent.heliosphere">Contacter</a></div>')[0];
+                popup_04b652a456d0416e8c1548214559b953.setContent(html_ac52983c250048fe842668594fe1a835);
+            marker_ba0d834b1dc844a3b5e3e2a17b441bb6.bindPopup(popup_04b652a456d0416e8c1548214559b953);
+            var marker_ff9de522a9ad48c492e40c159718889f = L.marker(
+                [44.35,6.35],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_f3e3dd3df57f498f9c76b911cb937831);
+                var icon_f5004eb344e24c9d8a46a3bbb29be665 = L.AwesomeMarkers.icon({
+                    icon: 'ok-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ff9de522a9ad48c492e40c159718889f.setIcon(icon_f5004eb344e24c9d8a46a3bbb29be665);
+            var popup_0776b0a046144185a92e8e68ed1240a5 = L.popup({maxWidth: '300'});
+                var html_76cb94651179427299533926ff99d676 = $('<div id="html_76cb94651179427299533926ff99d676" style="width: 100.0%; height: 100.0%;"><strong>Nathalie ESCOFFIER</strong><br/>Seyne<br/><a href="https://www.facebook.com/messages/t/100010791480585">Contacter</a></div>')[0];
+                popup_0776b0a046144185a92e8e68ed1240a5.setContent(html_76cb94651179427299533926ff99d676);
+            marker_ff9de522a9ad48c492e40c159718889f.bindPopup(popup_0776b0a046144185a92e8e68ed1240a5);
+            var marker_a57e458313a44d1f9a0fb9d00234271a = L.marker(
+                [45.9,6.283333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_f3e3dd3df57f498f9c76b911cb937831);
+            var popup_21205fe6c48a48f4813915410d948ade = L.popup({maxWidth: '300'});
+                var html_4fad36725d0948f7a3d281bed69cef6a = $('<div id="html_4fad36725d0948f7a3d281bed69cef6a" style="width: 100.0%; height: 100.0%;"><strong>Rachel Delplanque</strong><br/>La Balme-de-Thuy<br/><a href="https://www.facebook.com/messages/t/rachel.delplanque.3">Contacter</a></div>')[0];
+                popup_21205fe6c48a48f4813915410d948ade.setContent(html_4fad36725d0948f7a3d281bed69cef6a);
+            marker_a57e458313a44d1f9a0fb9d00234271a.bindPopup(popup_21205fe6c48a48f4813915410d948ade);
+</script>
+</div> 
