@@ -61,12 +61,12 @@ class MapGenerator:
 #     prefix : str, default 'glyphicon'
 #         The prefix states the source of the icon. 'fa' for font-awesome or
 #         'glyphicon' for bootstrapp3.
-        #return folium.Icon(color='blue', icon='leaf', icon_color='white')
-        try:
-            float(isFormateur)
-            return None
-        except:
-            return folium.Icon(color='green', icon='ok-sign')
+        return folium.Icon(color='blue', icon='comment', icon_color='white', prefix='fa')
+        #try:
+        #    float(isFormateur)
+        #    return None
+        #except:
+        #    return folium.Icon(color='green', icon='ok-sign')
         
     
     def printMap(self):
@@ -83,12 +83,12 @@ class MapGenerator:
         # myMap = folium.Map(location=SF_COORDINATES, zoom_start=2)
         marker_cluster_parents = MarkerCluster(name='Parents',
                                        overlay=True,
-                                       control=True,
+                                       control=False,
                                        icon_create_function=None)
         marker_cluster_parents.add_to(myMap)
         marker_cluster_formateurs = MarkerCluster(name='Formateurs',
                                        overlay=True,
-                                       control=True,
+                                       control=False,
                                        icon_create_function=None)
         marker_cluster_formateurs.add_to(myMap)
         
