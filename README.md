@@ -26,7 +26,7 @@ On peut aussi mettre des tableaux :
 | Francais | 2 |
 
 
-Ou écrire des trucs en **gras** ou en _italique_ ou ~~barrés~~
+Ou écrire des trucs en **gras** ou en _italique_ ou ~~barrés~~ ou ==surligné==
 
 # Développement
 
